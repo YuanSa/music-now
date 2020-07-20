@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #222;
+    transition: all 0.3s;
+}
+#hint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    user-select: none;
+    position: absolute;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    z-index: -1;
+    transition: font-size 0.3s;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+@keyframes beats {
+    from {
+        font-size: 7em;
+    }
+    to {
+        font-size: 10em;
+    }
+}
+@keyframes beatsSmall {
+    from {
+        font-size: 2em;
+    }
+    to {
+        font-size: 3em;
+    }
+}
